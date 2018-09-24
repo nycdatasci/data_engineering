@@ -13,5 +13,5 @@ Software versions:
   
 - [nycdsa/hadoop-core](https://hub.docker.com/r/nycdsa/hadoop-core/)
   - Ubuntu 16.04
-  - Python 3.5.2
+  - Python 3.5.5
   - Hadoop 2.8.4
