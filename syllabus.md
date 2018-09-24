@@ -37,4 +37,6 @@
 
 11. Apache Spark - Spark ML
 
+12. Amazon Elastic MapReduce
+
 Project: Data Engineering Project
