@@ -2,7 +2,7 @@
 
 ## nycdsa Docker Images
 
-To get started, please read [Docker QuickStart](https://github.com/nycdatasci/bootcamp/blob/master/Docker/docker-quickstart.md)
+To get started, please read [Docker QuickStart](https://github.com/nycdatasci/data_engineering/blob/master/docker-quickstart.md)
 
 Software versions:
 
