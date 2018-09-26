@@ -4,7 +4,7 @@ from mrjob.protocol import JSONValueProtocol
 import random
 
 
-class MRRandomSampling(MRJob):
+class MRRandomSamplingIT(MRJob):
     
     INPUT_PROTOCOL = JSONValueProtocol
     OUTPUT_PROTOCOL = JSONValueProtocol
@@ -18,9 +18,9 @@ class MRRandomSampling(MRJob):
             raise ValueError('Invalid fraction value')
         
     def mapper(self, _, value):
-        if random.uniform(0, 1) < self.options.fraction:
+        if value.get('industry', '') == 'Information Technology' and random.uniform(0, 1) < self.options.fraction:
             yield _, value
 
 
 if __name__ == '__main__':
-    MRRandomSampling.run()
+    MRRandomSamplingIT.run()
