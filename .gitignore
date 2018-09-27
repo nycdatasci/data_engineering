@@ -5,4 +5,5 @@
 .ipynb_checkpoints        
 .local
 .bash_history
-*.class              
+*.class
+mr-output/           

@@ -16,12 +16,16 @@ class MRTopNValue(MRJob):
         
     def mapper(self, _, value):
         try:
-            max_ = float(value['estimatedSalary']['value']['maxValue'])
-            min_ = float(value['estimatedSalary']['value']['minValue'])
+            max_ = -float(value['estimatedSalary']['value']['maxValue'])
+            min_ = -float(value['estimatedSalary']['value']['minValue'])
         except (KeyError, ValueError):
             pass
         else:
             yield _, (max_, min_)
+            
+    def combiner_final(self):
+        for value in self.top_n:
+            yield None, value
     
     def reducer_init(self):
         if self.options.top_n < 1:
@@ -30,8 +34,10 @@ class MRTopNValue(MRJob):
         
     def reducer(self, _, values):
         for value in values:
+            # search for duplicates O(n)
             if value in self.top_n:
                 continue
+            # heap insertion: O(log n)
             elif len(self.top_n) < self.options.top_n:
                 heapq.heappush(self.top_n, value)
             else:
@@ -39,13 +45,13 @@ class MRTopNValue(MRJob):
                 
     def reducer_final(self):
         for value in self.top_n:
-            yield None, value
+            yield None, [-x for x in value]
             
     def steps(self):
         return [MRStep(mapper=self.mapper,
                        combiner_init=self.reducer_init,
                        combiner=self.reducer,
-                       combiner_final=self.reducer_final,
+                       combiner_final=self.combiner_final,
                        reducer_init=self.reducer_init,
                        reducer=self.reducer,
                        reducer_final=self.reducer_final)]
