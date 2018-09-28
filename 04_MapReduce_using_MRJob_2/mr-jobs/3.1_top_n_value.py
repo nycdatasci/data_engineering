@@ -30,8 +30,10 @@ class MRTopNValue(MRJob):
         
     def reducer(self, _, values):
         for value in values:
+            # search for duplicates O(n)
             if value in self.top_n:
                 continue
+            # heap insertion: O(log n)
             elif len(self.top_n) < self.options.top_n:
                 heapq.heappush(self.top_n, value)
             else:

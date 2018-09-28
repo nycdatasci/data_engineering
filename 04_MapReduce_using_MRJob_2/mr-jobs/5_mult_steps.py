@@ -34,15 +34,14 @@ class MRIndexingSkills(MRJob):
     def mapper_2(self, key, value):
         try:
             new_key = key['industry']
-            new_value = {'skill':key['industry'], 'count':value}
+            new_value = {'skill':key['skill'], 'count':value}
         except KeyError:
             pass
         else:
             yield new_key, new_value
         
     def reducer_2(self, key, values): 
-#         value = max(values, key=lambda v: v.get('count', 0))
-        return key, max(values)
+        yield key, max(values, key=lambda x: x['count'])
     
     def steps(self):
         return [
