@@ -12,8 +12,13 @@
   - MapReduce
 
 3. MapReduce using MRJob 1
+  - Protocols For Input & Output
+  - Filtering
 
-4. MapReduce using MRJob
+4. MapReduce using MRJob 2
+  - Top n
+  - Inverted Index
+  - Multi-step Jobs
 
 5. Apache Hive 1
   - Databases for Big Data
