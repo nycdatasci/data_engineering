@@ -18,8 +18,8 @@
 5. Apache Hive 1
   - Databases for Big Data
   - HiveQL and Querying Data
-  - Joins
-  - UDF in Hive
+  - Windowing And Analytics Functions
+  - MapReduce Scripts
 
 6. Apache Hive 2
   - Data Persistence In Hive
