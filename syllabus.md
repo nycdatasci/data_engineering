@@ -12,20 +12,25 @@
   - MapReduce
 
 3. MapReduce using MRJob 1
+  - Protocols For Input & Output
+  - Filtering
 
-4. MapReduce using MRJob
+4. MapReduce using MRJob 2
+  - Top n
+  - Inverted Index
+  - Multi-step Jobs
 
 5. Apache Hive 1
   - Databases for Big Data
   - HiveQL and Querying Data
-  - Joins
-  - UDF in Hive
+  - Windowing And Analytics Functions
+  - MapReduce Scripts
 
 6. Apache Hive 2
-  - Data Persistence In Hive
+  - Tables In Hive
   - Managed Tables and External Tables
-  - Partitions and Buckets
   - Storage Formats
+  - Partitions and Buckets
 
 7. Apache Pig 1
 
