@@ -6,4 +6,5 @@
 .local
 .bash_history
 *.class
-mr-output/           
+mr-output/
+*.jar           

@@ -6,5 +6,5 @@ for i in $( ls ../data/state-db/state-*.csv); do
     fi
 done
 
-echo "Create database 'stata' in Hive"
+echo "Create database 'state' in Hive"
 hive -f hive-create-state-db.hql 2>/dev/null
