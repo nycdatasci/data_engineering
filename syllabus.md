@@ -27,10 +27,10 @@
   - MapReduce Scripts
 
 6. Apache Hive 2
-  - Data Persistence In Hive
+  - Tables In Hive
   - Managed Tables and External Tables
-  - Partitions and Buckets
   - Storage Formats
+  - Partitions and Buckets
 
 7. Apache Pig 1
 
