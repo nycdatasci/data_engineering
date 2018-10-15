@@ -33,8 +33,16 @@
   - Partitions and Buckets
 
 7. Apache Pig 1
+  - Overview
+  - Pig Latin: Data Types
+  - Pig Latin: Relational Operators
 
 8. Apache Pig 2
+  - More Pig Latin: Relational operators
+  - More Pig Latin: Functions
+  - Compiling Pig to MapReduce
+  - The parallel clause
+  - Join optimizations
 
 9. Apache Spark - Spark core
 
