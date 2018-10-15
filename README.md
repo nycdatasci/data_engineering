@@ -15,3 +15,9 @@ Software versions:
   - Ubuntu 16.04
   - Python 3.5.5
   - Hadoop 2.8.4
+
+- [nycdsa/hadoop-stack](https://hub.docker.com/r/nycdsa/hadoop-stack/)
+  - Base: hadoop-core
+  - Hive 2.3.3
+  - Pig 0.17.0
+
