@@ -51,5 +51,9 @@
 11. Apache Spark - Spark ML
 
 12. Amazon Elastic MapReduce
+  - Overview
+  - Creating EMR Cluster
+  - Submitting Jobs
+  - Accessing Master Node
 
 Project: Data Engineering Project
