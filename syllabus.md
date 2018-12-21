@@ -2,7 +2,7 @@
 
 ## Overview
 
-This 6-week program provides hands-on introduction to Apache Hadoop and Spark programming using Python and cloud computing. The key components that will be covered in the course include Hadoop Distributed File Systems, MapReduce using MRJob, Apache Hive, Pig, as well as Spark. Tools and platforms that will be used include Docker, Amazon Web services and Databricks. In the first half of the program, students need to pull a pre-built Docker image and run most of the exercises locally using docker containers. In the second half, students need to access to their AWS and Databricks accounts to run cloud computing exercises. Students will need to bring their laptops to class. Detailed instructions will be provided ahead of time on how to pull and run a docker image, how to connect to AWS/Databricks, etc.
+This 6-week program provides a hands-on introduction to Apache Hadoop and Spark programming using Python and cloud computing. The key components covered by the course include Hadoop Distributed File Systems, MapReduce using MRJob, Apache Hive, Pig, and Spark. Tools and platforms that are used include Docker, Amazon Web Services and Databricks. In the first half of the program students are required to pull a pre-built Docker image and run most of the exercises locally using docker containers. In the second half students must access their AWS and Databricks accounts to run cloud computing exercises. Students will need to bring their laptops to class. Detailed instructions will be provided ahead of time on: how to pull and run a docker image, how to connect to AWS/Databricks, etc.
 
 **Unit 1: Introduction to Hadoop**
 
@@ -20,7 +20,7 @@ This 6-week program provides hands-on introduction to Apache Hadoop and Spark pr
 **Unit 2: MapReduce**
 
 3. MapReduce using MRJob 1
-  - Protocols For Input & Output
+  - Protocols for Input & Output
   - Filtering
 
 4. MapReduce using MRJob 2
@@ -37,7 +37,7 @@ This 6-week program provides hands-on introduction to Apache Hadoop and Spark pr
   - MapReduce Scripts
 
 6. Apache Hive 2
-  - Tables In Hive
+  - Tables in Hive
   - Managed Tables and External Tables
   - Storage Formats
   - Partitions and Buckets
@@ -53,27 +53,27 @@ This 6-week program provides hands-on introduction to Apache Hadoop and Spark pr
   - More Pig Latin: Relational operators
   - More Pig Latin: Functions
   - Compiling Pig to MapReduce
-  - The parallel clause
-  - Join optimizations
+  - The Parallel Clause
+  - Join Optimizations
 
 **Unit 5: Apache Spark and AWS**
 
-9. Apache Spark - Spark core
-  - Spark overview
+9. Apache Spark - Spark Core
+  - Spark Overview
   - Running Spark using Databricks Notebooks
   - Working with PySpark: RDDs
   - Transformations and Actions
 
 10. Apache Spark - Spark SQL
   - Spark DataFrame
-  - SQL operations using Spark SQL 
+  - SQL Operations using Spark SQL 
 
 11. Apache Spark - Spark ML
-  - ML Pipeline using pySpark
+  - ML Pipeline using PySpark
 
 12. Amazon Elastic MapReduce
   - Overview
-  - AWS services: IAM, EC2, S3
+  - Amazon Web Services: IAM, EC2, S3
   - Creating EMR Cluster
   - Submitting Jobs
   - Intro to AWS CLI
